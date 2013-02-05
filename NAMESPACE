@@ -1,0 +1,8 @@
+export(filter_sg)
+export(remove_mahalanobis_outliers)
+export(strip_spectra)
+importFrom(mvoutlier,sign1)
+importFrom(pls,plsr)
+importFrom(pls,scores)
+importFrom(plyr,aaply)
+importFrom(signal,sgolayfilt)

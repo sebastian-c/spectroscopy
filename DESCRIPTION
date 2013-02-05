@@ -1,0 +1,19 @@
+Package: spectroscopy
+Type: Package
+Title: Code for spectra in Cubist modelling
+Version: 0.1
+Date: 2012-09-26
+Author: Michael Nelson
+Maintainer: Sebastian Campbell <sebastian.campbell@sydney.edu.au>
+Description: More about what it does (maybe more than one line)
+License: GPL-3
+Imports:
+    pls,
+    plyr,
+    signal,
+    mvoutlier
+Collate:
+    'filter_sg.R'
+    'spectroscopy-internal.R'
+    'remove_mahalanobis_outliers.R'
+    'strip_spectra.R'
