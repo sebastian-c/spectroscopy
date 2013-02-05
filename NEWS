@@ -1,0 +1,6 @@
+* Added new function: soil_colour_spectra
+
+spectroscopy 0.1
+--------------------------------------------------------------
+
+* Added 3 new functions: remove_mahalanobis_outliers, filter_sg, strip_spectra
