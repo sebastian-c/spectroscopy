@@ -13,7 +13,7 @@
 #' 
 
 strip_spectra <- function(spectra, datawavs, wavlimits=range(datawavs), which=1){
-  stopifnot(length(wavlimits) == 2)
+  if(length(wavlimits) != 2) stop("wavlimits should be of length 2")
     
   datawavs <- as.numeric(datawavs)  
   

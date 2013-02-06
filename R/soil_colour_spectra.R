@@ -10,11 +10,12 @@
 #' 
 #' @param spectra matrix or data.frame with spectra as rows and wavelengths as columns
 #' @param wavelengths vector of wavelengths corresponding to the columns of spectra
+#' @param include_id if TRUE, adds an id column which is simply an integer from \code{1:nrow(spectra)}
 #' 
 #' @export soil_colour_spectra
 #' @author Michael Nelson
 
-soil_colour_spectra <- function(spectra, wavelengths){
+soil_colour_spectra <- function(spectra, wavelengths, include_id=FALSE){
   ## this function loads spectra
   ## and returns the rgb colour and munsell colour
   ##
@@ -25,7 +26,13 @@ soil_colour_spectra <- function(spectra, wavelengths){
   munsell_colours <- splat(function(red,green,blue, ...){rgb2mnsl(R=red,G=green,B=blue)})(rgb_colours)
   ##
   ## return
-  data.frame(rgb_colours, munsell = munsell_colours)
+  soil_colours <- data.frame(rgb_colours, munsell = munsell_colours)
+  if(include_id){
+    names(soil_colours)[1] <- "id"
+  } else {
+    soil_colours <- soil_colours[ , -1]
+  }
+  soil_colours
 }
 
 

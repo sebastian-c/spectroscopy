@@ -1,3 +1,4 @@
+* Integrated `testthat` functionality
 * Added new function: soil_colour_spectra
 
 spectroscopy 0.1

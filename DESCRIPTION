@@ -7,11 +7,15 @@ Author: Michael Nelson
 Maintainer: Sebastian Campbell <sebastian.campbell@sydney.edu.au>
 Description: More about what it does (maybe more than one line)
 License: GPL-3
+URL: https://github.com/sebastian-c/spectroscopy/
 Imports:
     pls,
     plyr,
     signal,
-    mvoutlier
+    mvoutlier,
+    munsell
+Suggests:
+    testthat
 Collate:
     'filter_sg.R'
     'spectroscopy-internal.R'
