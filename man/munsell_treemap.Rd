@@ -3,7 +3,8 @@
 \title{Create Munsell treemap}
 \usage{
   munsell_treemap(spectra, wavelengths, coltext = TRUE,
-    otherArgs = NULL, textrange = c(3, 10))
+    numtext = FALSE, otherArgs = NULL,
+    textrange = c(3, 10))
 }
 \arguments{
   \item{spectra}{dataframe or matrix where each row is a
