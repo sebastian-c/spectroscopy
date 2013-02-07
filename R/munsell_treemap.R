@@ -2,6 +2,8 @@
 #' 
 #' Creates a treemap with frequency of munsell colours as the size of the tree rectangles using \code{treemap} and actual Munsell colours as the colours of rectangles using \code{ggplot2}.
 #' 
+#' @author Michael Nelson, Sebastian Campbell
+#' 
 #' @importFrom treemap tmPlot
 #' @importFrom munsell rgb2mnsl
 #' @importFrom munsell mnsl

@@ -3,7 +3,7 @@
 \title{Create Munsell treemap}
 \usage{
   munsell_treemap(spectra, wavelengths, coltext = TRUE,
-    otherArgs = NULL, textrange = c(1, 15))
+    otherArgs = NULL, textrange = c(3, 10))
 }
 \arguments{
   \item{spectra}{dataframe or matrix where each row is a
@@ -26,5 +26,8 @@
   the size of the tree rectangles using \code{treemap} and
   actual Munsell colours as the colours of rectangles using
   \code{ggplot2}.
+}
+\author{
+  Michael Nelson, Sebastian Campbell
 }
 
