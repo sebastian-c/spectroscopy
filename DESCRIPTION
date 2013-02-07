@@ -21,4 +21,4 @@ Collate:
     'spectroscopy-internal.R'
     'remove_mahalanobis_outliers.R'
     'strip_spectra.R'
-    'soil_colour_spectra.R'
+    'spectra2colour.R'

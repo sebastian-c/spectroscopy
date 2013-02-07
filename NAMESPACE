@@ -1,6 +1,6 @@
 export(filter_sg)
 export(remove_mahalanobis_outliers)
-export(soil_colour_spectra)
+export(spectra2colour)
 export(strip_spectra)
 importFrom(munsell,rgb2mnsl)
 importFrom(mvoutlier,sign1)

@@ -1,10 +1,9 @@
-\name{soil_colour_spectra}
-\alias{soil_color_spectra}
-\alias{soil_colour_spectra}
+\name{spectra2colour}
+\alias{spectra2color}
+\alias{spectra2colour}
 \title{Load spectra and extract RGB and Munsell colour}
 \usage{
-  soil_colour_spectra(spectra, wavelengths,
-    include_id = FALSE)
+  spectra2colour(spectra, wavelengths, include_id = FALSE)
 }
 \arguments{
   \item{spectra}{matrix or data.frame with spectra as rows

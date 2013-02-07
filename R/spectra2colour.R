@@ -2,7 +2,7 @@
 #' 
 #' Converts spectra reflectance into RGB and Munsell colours
 #' 
-#' @aliases soil_color_spectra
+#' @aliases spectra2color
 #' @importFrom plyr adply
 #' @importFrom plyr splat
 #' @importFrom plyr llply
@@ -12,10 +12,10 @@
 #' @param wavelengths vector of wavelengths corresponding to the columns of spectra
 #' @param include_id if TRUE, adds an id column which is simply an integer from \code{1:nrow(spectra)}
 #' 
-#' @export soil_colour_spectra
+#' @export spectra2colour
 #' @author Michael Nelson
 
-soil_colour_spectra <- function(spectra, wavelengths, include_id=FALSE){
+spectra2colour <- function(spectra, wavelengths, include_id=FALSE){
   ## this function loads spectra
   ## and returns the rgb colour and munsell colour
   ##
