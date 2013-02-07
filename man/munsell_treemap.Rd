@@ -1,0 +1,20 @@
+\name{munsell_treemap}
+\alias{munsell_treemap}
+\title{Create Munsell treemap}
+\usage{
+  munsell_treemap(spectra, wavelengths, coltext = TRUE)
+}
+\arguments{
+  \item{spectra}{dataframe or matrix where each row is a
+  spectrum and each column is a wavelength}
+
+  \item{wavelengths}{integer wavelengths corresponding to
+  the columns of \code{spectra}.}
+}
+\description{
+  Creates a treemap with frequency of munsell colours as
+  the size of the tree rectangles using \code{treemap} and
+  actual Munsell colours as the colours of rectangles using
+  \code{ggplot2}.
+}
+

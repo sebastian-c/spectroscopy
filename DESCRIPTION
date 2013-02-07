@@ -13,7 +13,8 @@ Imports:
     plyr,
     signal,
     mvoutlier,
-    munsell
+    munsell,
+    treemap
 Suggests:
     testthat
 Collate:
@@ -22,3 +23,4 @@ Collate:
     'remove_mahalanobis_outliers.R'
     'strip_spectra.R'
     'spectra2colour.R'
+    'munsell_treemap.R'
