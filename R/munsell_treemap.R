@@ -52,7 +52,8 @@ munsell_tm <- function(spectra, wavelengths){
   munsell_table <- as.data.frame(table(munsell))
   
   pdf(file=NULL)
-  raw_tmdata <- tmPlot(munsell_table, index="munsell", vSize="Freq")[[1L]][[1L]]
+  raw_tmdata <- try(tmPlot(munsell_table, index="munsell", vSize="Freq")[[1L]][[1L]])
+  if(class(raw_tmdata) == "try-error") {dev.off(); stop("tmPlot encountered an error")}
   dev.off()
   
   ordered_munsell <- sapply(raw_tmdata[,-c(ncol(raw_tmdata)-0:3)], levels)
