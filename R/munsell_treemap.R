@@ -10,22 +10,26 @@
 #' @export munsell_treemap
 #' 
 #' @param spectra dataframe or matrix where each row is a spectrum and each column is a wavelength
-#' @param wavelengths integer wavelengths corresponding to the columns of \code{spectra}.
-#' @param coltext logical, whether or not to plot Munsell colours as text.
+#' @param wavelengths integer wavelengths corresponding to the columns of \code{spectra}
+#' @param coltext logical, whether or not to plot Munsell colours as text
+#' @param otherArgs list of additional elements to be added to ggplot2 call
+#' @param textrange vector of length two indicating minimum and maximum text size respectively
 
-munsell_treemap <- function(spectra, wavelengths, coltext=TRUE){
+munsell_treemap <- function(spectra, wavelengths, coltext=TRUE, otherArgs=NULL, textrange=c(3, 10)){
   treemap_data <- munsell_tm(spectra, wavelengths)
   
   treemap <- ggplot(treemap_data, aes(xmin=x0, xmax=x0+w, ymin=y0, ymax=y0+h))+
     geom_rect(aes(fill=hex))+
     scale_fill_identity()+
-    scale_size_continuous()+
-    scale_size_log10()+
-    theme(axis.title=element_blank())
+    scale_x_continuous(expand=c(0,0))+
+    scale_y_continuous(expand=c(0,0))+
+    theme(axis.title=element_blank(), axis.ticks=element_blank(), axis.text=element_blank())
     
-  if(coltext) treemap <- treemap + geom_text(aes(label=munsell, x=x0+0.5*w, y=y0+0.5*h, size=Freq))
+  if(coltext) treemap <- treemap + 
+    geom_text(aes(label=munsell, x=x0+0.5*w, y=y0+0.5*h, size=log10(Freq)), show_guide=FALSE)+
+    scale_size_continuous(range=textrange)
     
-  print(treemap)
+  print(treemap+otherArgs)
 }
 
 munsell_tm <- function(spectra, wavelengths){
