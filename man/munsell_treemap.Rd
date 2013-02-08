@@ -16,6 +16,9 @@
   \item{coltext}{logical, whether or not to plot Munsell
   colours as text}
 
+  \item{numtext}{logical, whether or not to plot colour
+  frequencies}
+
   \item{otherArgs}{list of additional elements to be added
   to ggplot2 call}
 
