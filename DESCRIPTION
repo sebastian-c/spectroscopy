@@ -1,11 +1,11 @@
 Package: spectroscopy
 Type: Package
 Title: Code for spectra in Cubist modelling
-Version: 0.1
+Version: 0.1-1
 Date: 2012-09-26
 Author: Michael Nelson
 Maintainer: Sebastian Campbell <sebastian.campbell@sydney.edu.au>
-Description: More about what it does (maybe more than one line)
+Description: A helper package for the April Soil Spectral Inference workshop at the University of Sydney
 License: GPL-3
 URL: https://github.com/sebastian-c/spectroscopy/
 Imports:

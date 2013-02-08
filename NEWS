@@ -1,3 +1,5 @@
+spectroscopy 0.1-1
+
 * Added new function: `munsell_treemap`
 * Integrated `testthat` functionality
 * Added new function: `spectra2colour`
