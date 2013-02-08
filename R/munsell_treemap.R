@@ -55,7 +55,7 @@ munsell_tm <- function(spectra, wavelengths){
   library(treemap) #Otherwise it does not load
   
   pdf(file=NULL)
-  tmPlot(munsell_table, index="munsell", vSize="Freq")[[1L]][[1L]]
+  raw_tmdata <- tmPlot(munsell_table, index="munsell", vSize="Freq")[[1L]][[1L]]
   dev.off()
   
   ordered_munsell <- sapply(raw_tmdata[,-c(ncol(raw_tmdata)-0:3)], levels)
