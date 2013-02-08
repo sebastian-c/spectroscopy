@@ -14,6 +14,7 @@
 #' @param spectra dataframe or matrix where each row is a spectrum and each column is a wavelength
 #' @param wavelengths integer wavelengths corresponding to the columns of \code{spectra}
 #' @param coltext logical, whether or not to plot Munsell colours as text
+#' @param numtext logical, whether or not to plot colour frequencies
 #' @param otherArgs list of additional elements to be added to ggplot2 call
 #' @param textrange vector of length two indicating minimum and maximum text size respectively
 
@@ -50,6 +51,8 @@ munsell_tm <- function(spectra, wavelengths){
   munsell <- splat(function(red,green,blue, ...){rgb2mnsl(R=red, G=green, B=blue)})(rgb_colours)
     
   munsell_table <- as.data.frame(table(munsell))
+  
+  library(treemap) #Otherwise it does not load
   
   pdf(file=NULL)
   raw_tmdata <- tmPlot(munsell_table, index="munsell", vSize="Freq")[[1L]][[1L]]
