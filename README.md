@@ -11,8 +11,6 @@ Contains functions to trim and filter spectra as well as deriving colour informa
 How to install
 --------------
 
-You will need Rtools 2.15 if building under windows. 
-
 The easiest way is to use `install_github` from `devtools`.
 
 ```r
