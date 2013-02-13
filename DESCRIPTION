@@ -5,7 +5,8 @@ Version: 0.1-1
 Date: 2012-09-26
 Author: Michael Nelson
 Maintainer: Sebastian Campbell <sebastian.campbell@sydney.edu.au>
-Description: A helper package for the April Soil Spectral Inference workshop at the University of Sydney
+Description: A helper package for the April Soil Spectral Inference workshop at
+    the University of Sydney
 License: GPL-3
 URL: https://github.com/sebastian-c/spectroscopy/
 Imports:

@@ -47,6 +47,9 @@ munsell_treemap <- function(spectra, wavelengths, coltext=TRUE, numtext=FALSE, o
 }
 
 munsell_tm <- function(spectra, wavelengths){
+  
+  spectra <- as.matrix(spectra)
+  
   rgb_colours <- adply(spectra, 1L, spectra_to_RGB, all_wavelengths = wavelengths)
   munsell <- splat(function(red,green,blue, ...){rgb2mnsl(R=red, G=green, B=blue)})(rgb_colours)
     
