@@ -1,4 +1,7 @@
+* `munsell_treemap` and `spectra2colour` now accept data.frames.
+
 spectroscopy 0.1-1
+--------------------------------------------------------------
 
 * Added new function: `munsell_treemap`
 * Integrated `testthat` functionality

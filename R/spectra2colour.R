@@ -18,7 +18,9 @@
 spectra2colour <- function(spectra, wavelengths, include_id=FALSE){
   ## this function loads spectra
   ## and returns the rgb colour and munsell colour
-  ##
+  
+  spectra <- as.matrix(spectra)
+  
   ## find r,g,b colour
   rgb_colours <- adply(spectra, 1, spectra_to_RGB, all_wavelengths = wavelengths)
   ##
