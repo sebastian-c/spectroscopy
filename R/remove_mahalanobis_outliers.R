@@ -6,7 +6,7 @@
 #' @param response reponse you are trying to predict from the spectra
 #' @param plsr_scores plsr scores from 1 to value to be used for calculating outliers
 #' @param critical_value Chi-square critical value at which to exclude outliers
-#' @importFrom pls plsr scores
+#' #@importFrom pls plsr scores
 #' @importFrom mvoutlier sign1
 #' @export remove_mahalanobis_outliers
 #' @author Michael Nelson

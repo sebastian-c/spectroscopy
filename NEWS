@@ -1,3 +1,8 @@
+spectroscopy 0.2-0
+--------------------------------------------------------------
+
+* Imported many functions from Brendan Malone including `chBLC`, `compspec`, 
+  `goof`, `mscBLC`, `snvBLC` and `wavelet_smooth`.
 * `munsell_treemap` and `spectra2colour` now accept data.frames.
 
 spectroscopy 0.1-1

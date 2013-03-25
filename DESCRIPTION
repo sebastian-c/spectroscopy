@@ -1,22 +1,29 @@
 Package: spectroscopy
 Type: Package
 Title: Code for spectra in Cubist modelling
-Version: 0.1-1
+Version: 0.2-0
 Date: 2012-09-26
-Author: Michael Nelson
+Authors@R: c(person("Sebastian", "Campbell", role = c("aut", "cre"),
+    email="sebastian.campbell@sydney.edu.au"),
+    person("Brendan", "Malone", role="aut"),
+    person("Budiman", "Minasny", role="aut"),
+    person("Michael", "Nelson", role="aut"))
+Author: Sebastian Campbell, Brendan Malone, Budiman Minasny and Michael Nelson
 Maintainer: Sebastian Campbell <sebastian.campbell@sydney.edu.au>
 Description: A helper package for the April Soil Spectral Inference workshop at
     the University of Sydney
 License: GPL-3
 URL: https://github.com/sebastian-c/spectroscopy/
+Depends:
+    pls
 Imports:
-    pls,
     plyr,
     signal,
     mvoutlier,
     munsell,
     treemap,
-    ggplot2
+    ggplot2,
+    wavethresh
 Suggests:
     testthat
 Collate:
@@ -26,3 +33,11 @@ Collate:
     'strip_spectra.R'
     'spectra2colour.R'
     'munsell_treemap.R'
+    'chBLC.R'
+    'compSpec.R'
+    'goof.R'
+    'mscBLC.R'
+    'predict_bag_plsr.R'
+    'snvBLC.R'
+    'trimSpec.R'
+    'wavelet_smooth.R'

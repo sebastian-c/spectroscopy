@@ -18,7 +18,7 @@
   for calculating outliers}
 
   \item{critical_value}{Chi-square critical value at which
-  to exclude outliers}
+  to exclude outliers #}
 }
 \value{
   A list containing the spectra and the response with
