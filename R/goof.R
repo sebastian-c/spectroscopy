@@ -36,7 +36,7 @@ goof <- function(observed,predicted, ...){
   
   # Concordance
   mx <- mean(observed)
-  my < mean(predicted)
+  my <- mean(predicted)
   s2x <- var(observed)
   s2y <- var(predicted)
   sxy <- mean((observed-mx) * (predicted-my))
