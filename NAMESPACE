@@ -1,6 +1,8 @@
 export(chBLC)
 export(compSpec)
+export(epo)
 export(filter_sg)
+export(fit_bag_plsr)
 export(goof)
 export(mscBLC)
 export(munsell_treemap)

@@ -41,3 +41,5 @@ Collate:
     'snvBLC.R'
     'trimSpec.R'
     'wavelet_smooth.R'
+    'fit_bag_plsr.R'
+    'epo.R'
