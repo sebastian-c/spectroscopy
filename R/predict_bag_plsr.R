@@ -1,13 +1,21 @@
 #' Predict using a fitted bootstrap aggregated PLSR model
 #' 
+#' @author Budiman Minasny
+#' 
 #' @param model.bpls bagged PLSR model
 #' @param newspec matrix of spectra to be predicted where each column is a wavelength and each row a spectrum
 #' @param nbag size of bootstrap sample
 #' @param nc number of components
-#' @return a list containing bag.pred :- predicted values, pred.ave :- mean of predictions, pred.std :- standard deviation of predictions
+#' 
+#' @return A list containing:
+#' \item{bag.pred}{predicted values}
+#' \item{pred.ave}{mean of predictions}
+#' \item{pred.std}{standard deviation of predictions}
+#' 
+#' @seealso \code{\link{fit_bag_plsr}}
 #' 
 #' @importFrom stats predict
-#'  
+#' 
 #' @export
 
 predict_bag_plsr<-function(model.bpls,newspec,nbag,nc){

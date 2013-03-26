@@ -2,7 +2,7 @@
 \alias{goof}
 \title{Goodness of fit}
 \usage{
-  goof(observed, predicted)
+  goof(observed, predicted, ...)
 }
 \arguments{
   \item{observed}{numeric vector of observed values}
@@ -11,5 +11,8 @@
 }
 \description{
   Goodness of fit
+}
+\author{
+  Brendan Malone
 }
 

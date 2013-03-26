@@ -15,11 +15,17 @@
   \item{nc}{number of components}
 }
 \value{
-  a list containing bag.pred :- predicted values, pred.ave
-  :- mean of predictions, pred.std :- standard deviation of
-  predictions
+  A list containing: \item{bag.pred}{predicted values}
+  \item{pred.ave}{mean of predictions}
+  \item{pred.std}{standard deviation of predictions}
 }
 \description{
   Predict using a fitted bootstrap aggregated PLSR model
+}
+\author{
+  Budiman Minasny
+}
+\seealso{
+  \code{\link{fit_bag_plsr}}
 }
 
