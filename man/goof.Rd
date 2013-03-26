@@ -8,6 +8,8 @@
   \item{observed}{numeric vector of observed values}
 
   \item{predicted}{numeric vector of predicted values}
+
+  \item{...}{arguments passed to \code{\link{eqscplot}}}
 }
 \description{
   Goodness of fit

@@ -7,7 +7,7 @@
 #' @param nbag integer. Number of bootstrap parameters.
 #' @param maxc integer. Maximum number of components for PLSR.
 #' 
-#' @value A list containing:
+#' @return A list containing:
 #' \item{model}{PLS models}
 #' \item{oob_rmse}{mean out-of-bag RMSE}
 #' \item{cal_rmse}{mean calibration RMSE}
