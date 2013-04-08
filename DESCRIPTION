@@ -1,7 +1,7 @@
 Package: spectroscopy
 Type: Package
-Title: Code for spectra in Cubist modelling
-Version: 0.2-1
+Title: Code for spectra in spectral modelling
+Version: 0.2-2
 Date: 2012-09-26
 Authors@R: c(person("Sebastian", "Campbell", role = c("aut", "cre"),
     email="sebastian.campbell@sydney.edu.au"),
