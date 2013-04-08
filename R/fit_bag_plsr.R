@@ -18,13 +18,13 @@
 
 
 
-fit_bag_plsr<-function(soilv,spec,nbag,maxc){
+fit_bag_plsr<-function(soilv, spec, nbag, maxc){
   # fit a bootstrap aggregated PLSR
   # soilv = soil variables of interest, spec= spectra, nbag, no. of bootstrap, maxc= max. no. of components used in PLSR
   # return variables: model = PLS models, oob_rmse = mean out-of-bag RMSE, cal_rmse = mean calibration RMSE
   # use pls package
   # Budiman March 2013
-  nc < -maxc
+  nc <- maxc
   n <- length(soilv)
   v.pls <- vector(nbag, mode="list")
   cal_rmse <- matrix(0, nrow=nbag,ncol=1)
