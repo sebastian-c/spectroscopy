@@ -5,7 +5,7 @@
 #' @param spectra a matrix or data.frame with wavelengths as columns and spectra as rows
 #' @export
 
-chBLC<- function(spectra){
+chBLC <- function(spectra){
   interval <- seq_len(ncol(spectra))
   hull_spectra <- matrix(NA,ncol=ncol(spectra),nrow=nrow(spectra))
   for (i in seq_len(nrow(spectra))){
@@ -14,12 +14,14 @@ chBLC<- function(spectra){
     ## calculate convex hull
     c_hull <- chull(data1)
     ## get the appropriate region: the points of the polygon over the spectra
-    if(tail(c_hull, 1) == 1L){
-      ## If the first point is the last point, just use the first and last point
-      c_hull <- c_hull[c(1, length(c_hull))]
-      } else {
-        c_hull <- c_hull[which(c_hull == 1):length(c_hull)]
-      }
+
+    # Create vector which wraps around
+    c_hull <- c(c_hull, c_hull)
+    # remove all points before the first one.
+    c_hull <- c_hull[which.min(c_hull):length(c_hull)]
+    # Go until the first end
+    c_hull <- c_hull[1:which.max(c_hull)]
+        
     ## calculate linear approximation between hull points
     linear_approx <- approx(data1[c_hull,], xout = interval, method = 'linear', ties = 'mean')
     ## calculate the deviation from the convex hull
