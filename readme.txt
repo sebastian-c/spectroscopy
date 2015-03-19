@@ -1,0 +1,1 @@
+The development of this project has been moved to [Soilsecuritylab/spectroscopy_package](https://github.com/Soilsecuritylab/spectroscopy_package). For access, please contact @mariofajardo.
